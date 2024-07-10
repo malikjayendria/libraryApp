@@ -104,8 +104,8 @@ public class main {
       System.out.println("2. Remove Book");
       System.out.println("3. Show All Books");
       System.out.println("4. Search for Books by Title");
-      System.out.println("5. Quit");
-      System.out.println("6. Change Book Information");
+      System.out.println("5. Change Book Information");
+      System.out.println("6. Quit");
       System.out.print("Select option: ");
       input = scanner.nextInt();
       scanner.nextLine();
@@ -165,11 +165,11 @@ public class main {
         }
         break;
 
-        case 5:
+        case 6:
         System.out.println("\nQuiting...");
         break;
 
-        case 6:
+        case 5:
         System.out.print("Enter the title of the book you want to change : ");
         String titleBookChanged = scanner.nextLine();
         Book foundedBookChg = lailLibrary.findBook(titleBookChanged);
@@ -219,7 +219,7 @@ public class main {
       }
 
       System.out.println();
-    } while (input != 5);
+    } while (input != 6);
 
     scanner.close();
   }
