@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 class Book { 
 
-  
   private String title;
   private int releaseDate;
   private String author;
@@ -80,8 +79,6 @@ class Library {
     for(Book book : bookCollection){
       if (book.getTitle().equalsIgnoreCase(title)) {
         return book;
-      } else {
-        System.out.println("Book is not found");
       }
     }
     return null;
